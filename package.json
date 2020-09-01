@@ -1,5 +1,5 @@
 {
-  "name": "default",
+  "name": "plant-food",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "debug": "node --inspect-brk node_modules/jest/bin/jest --runInBand"
   },
   "keywords": [],
-  "author": "",
+  "author": "Micheal Hansen, Cody Fritz, Vera Weikel",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
