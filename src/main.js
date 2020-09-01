@@ -23,7 +23,7 @@ const connectButtons = function(newPlant) {
 
 const createDisplay = function(newPlant) {
   const plantValues = $('#plant-values');
-  const plantHTML = `<h2>${newPlant().name}</h2><h3>Soil: <span id=${newPlant().name}-food-display>0</span></h3><h3>Water: <span id=${newPlant().name}-water-display>0</span></h3><h3><span id=${newPlant().name}-light-display>0</span></h3>`;
+  const plantHTML = `<h2>${newPlant().name}</h2><h3>Soil: <span id=${newPlant().name}-food-display>0</span></h3><h3>Water: <span id=${newPlant().name}-water-display>0</span></h3><h3>Light: <span id=${newPlant().name}-light-display>0</span></h3>`;
   const buttonHtml = `<button class='btn btn-success' id=${newPlant().name}-feed>Feed ${newPlant().name}</button><button class='btn btn-success' id=${newPlant().name}-water>Water ${newPlant().name}</button><button class='btn btn-success' id=${newPlant().name}-light>Light ${newPlant().name}</button>`;
   plantValues.append(plantHTML);
   plantValues.append(buttonHtml);
