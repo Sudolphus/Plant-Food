@@ -1,5 +1,10 @@
+const initialState = {
+  soil: 0,
+  water: 0
+};
+
 export const storeState = () => {
-  let currentState = {};
+  let currentState = {...initialState};
   return (stateChangeFunction = state => state) => {
     const newState = stateChangeFunction(currentState);
     currentState = {...newState};
