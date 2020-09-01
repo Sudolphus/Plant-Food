@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import {storeState, changeState} from './../src/plant.js';
+import {storeState, changeState, stateGenerator} from './../src/plant.js';
 
 describe("Plant", ()=>{
   const plant = storeState();
@@ -25,5 +25,22 @@ describe("Plant", ()=>{
     const yellowFood = changeState("light")(8);
     plant(yellowFood);
     expect(plant().light).toBe(8);
+  });
+
+  test("should be able to generate plants with stateGenerator", ()=>{
+    const plantCreator = stateGenerator();
+    const newPlant = plantCreator();
+    expect(newPlant().soil).toBe(0);
+    expect(newPlant().water).toBe(0);
+    expect(newPlant().light).toBe(0);
+    expect(newPlant().name).toBe("plant1");
+  });
+
+  test("should be able to generate multiple plants", ()=>{
+    const plantCreator = stateGenerator();
+    const plant1 = plantCreator();
+    const plant2 = plantCreator();
+    expect(plant1().name).toBe("plant1");
+    expect(plant2().name).toBe("plant2");
   });
 });

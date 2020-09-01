@@ -6,9 +6,6 @@ import { storeState, changeState } from './plant';
 
 $(document).ready(function() {
   const plant = storeState(); //plant = {soil: 0, water: 0}
-
-  
-  
   const plantTwo = storeState();
   const plantThree = storeState();
   
