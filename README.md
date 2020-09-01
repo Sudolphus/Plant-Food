@@ -12,7 +12,9 @@ _An application that explores closures and states in the context of a game about
 
 | Spec | Input | Output |
 | :--- | :---: | ---: |
-
+| Program can create a plant object | User clicks "New Game" | Plant object created |
+| Program can update plant values | User clicks "Feed" | Plant soil value increased by 1 |
+| Program can report plant values | None | Soil display shows current value |
 
 ## Setup/Installation Requirements
 

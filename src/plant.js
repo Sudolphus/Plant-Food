@@ -1,6 +1,7 @@
 const initialState = {
   soil: 0,
-  water: 0
+  water: 0,
+  light: 0
 };
 
 export const storeState = () => {

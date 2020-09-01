@@ -5,12 +5,18 @@
   </head>
   <body>
     <div class="container">
-      <div class="grow-buttons">
-        <button class="btn-success" id="feed">Add soil</button>
-        <button class="btn-success" id="show-state">Current Stats</button>
+      <div class="page-header">
+        <h1>Your Plant</h1>
       </div>
-      <h1>Your Plant's Values</h1>
-      <h3><span class="soil-value">0</span></h3>
-    </div>
+
+      <div class="plant-values">
+        <h3>Soil: <span id="plant-soil-value">0</span></h3>
+        <h3>Water: <span id="plant-water-value">0</span></h3>
+      </div>
+
+      <div class="button-group">
+        <button class="btn btn-success" id="feed-plant">Feed Plant</button>
+        <button class="btn btn-success" id="water-plant">Water Plant</button>
+      </div>
   </body>
 </html>
