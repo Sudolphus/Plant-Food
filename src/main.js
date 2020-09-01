@@ -21,5 +21,4 @@ $(document).ready(function() {
     plant(changeState("light")(5));
     $('#plant-light-value').html(plant().light);
   });
-  
 });
