@@ -12,8 +12,6 @@ export const storeState = () => {
   };
 };
 
-export const stateControl = storeState();
-
 export const changeState = (prop) => {
   return (value) => {
     return (state) => ({
@@ -22,8 +20,3 @@ export const changeState = (prop) => {
     });
   };
 };
-
-export const feed = changeState("soil")(1);
-export const blueFood = changeState("soil")(5);
-export const hydrate = changeState("water")(1);
-export const superHydrate = changeState("water")(5);
