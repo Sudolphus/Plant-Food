@@ -43,4 +43,11 @@ describe("Plant", ()=>{
     expect(plant1().name).toBe("plant1");
     expect(plant2().name).toBe("plant2");
   });
+
+  test("should be able to increment values of generated plants", ()=>{
+    const plantCreater = stateGenerator();
+    const newPlant = plantCreater();
+    newPlant(changeState("soil")(5));
+    expect(newPlant().soil).toBe(5);
+  });
 });
